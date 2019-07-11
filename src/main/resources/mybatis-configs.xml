@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <settings>
+     <!-- 配置是否启用二级缓存(了解) -->
+     <setting name="cacheEnabled" value="true"/>
+     <setting name="logImpl" value="LOG4J"/>
+  </settings>
+  
+  <!--typeAliases 配置别名：在MyBatis中为一个类取别名 
+  				  配置别名是为了在对象映射文件中接收参数类型和返回参数类型时使用 -->
+  <typeAliases>
+     <package name="com.db.sys.entity"/>
+  </typeAliases>
+</configuration>
+
+
+
+
